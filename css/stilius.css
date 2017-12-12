@@ -1,0 +1,34 @@
+.para {
+    font-weight:bold
+}
+
+p {
+    font-style:italic;
+}
+
+.lentele-1 td, .lentele-1 th, .lentele-1 .td, .lentele-1 .th{
+    border: 1px #dddddd double;
+    padding: 15px 20px;
+
+
+}
+
+.lentele-1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* komentaras */
+
+.lentele-1 tr > td:first-child, .lentele-1 .tr > .td:first-child {
+    text-align: center;
+    width: 1%;
+}
+
+.lentele-1 th {
+    color: white;
+    background: black;
+    font-size: 16px;
+}
+
+padd
