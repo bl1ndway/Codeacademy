@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pirmas-JS</title>
+</head>
+
+<!--<body onload="inf()">-->
+<body>
+<script>
+    <!--Pats paprasciausias scriptas-->
+    var a, b, c;
+    a = 4;
+    b = 4;
+    c = Math.ceil(((a+b *2) * 2)/3);
+    d = b*2; d+=a + 1; d *= 2+1;
+    d=d / 3;
+    d = Math.floor(d);
+    var cnt=1;
+    function inf () {
+        //alert(c); //pvz
+        var e = document.getElementById('div');
+        e.innerHTML = e.innerHTML + '' + c;
+        console.log(cnt++ + ':c=' + c + ', d=' + d)
+//nuo 0 gaunasi skaiciavimas
+// [] = masyvas
+        var s = "labas"; // String/eilutes tipas
+        var n = 5; //Number/skaiciaus tipas
+        var m = ['BMW', 'Ford', 'Audi']; //masyvo tipas
+        m[2] = 'Honda'
+        console.log (m[1] + ' ' + m[2]);
+        m[3] = 'Volvo';
+        console.log (m[3]);
+        m[m.length] = 'aaa';
+        console.log(m[4]+ ' masyvo dydis = ' + m.length);
+        console.log(JSON.stringify(m));
+
+       // Objektas
+        var o = {
+            'paskirtis': 'Automobilis',
+            'savybes': {
+                'pavaros': 'automatine',
+                'durys': 4,
+                'info': function (){
+                    return 'Nera Informacijos'
+                }
+
+            }
+        }
+        console.log('Paskirtis:' + o.paskirtis);
+        console.log('Durys:' + o.savybes.durys);
+        console.log('Žibintai:' + o.savybes['žibintai']);
+        e.innerHTML += '' + 'Žibintai'+ o.savybes['žibintai'];
+        console.log('Info:' + o.savybes.info());
+        console.log(JSON.stringify(o));
+    }
+   // getElementByID - priskirti DIV jo ID
+</script>
+<div id="div" style="border: 1px red solid; min-width: 100px; min-height: 80px"></div>
+<input type="button" value="test" onclick="inf()">
+</body>
+</html>

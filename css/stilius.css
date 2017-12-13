@@ -3,7 +3,7 @@
 }
 
 p {
-    font-style:italic;
+    font-style:italic
 }
 
 .lentele-1 td, .lentele-1 th, .lentele-1 .td, .lentele-1 .th{
@@ -31,4 +31,6 @@ p {
     font-size: 16px;
 }
 
-padd
+.teksto-paryskinimas {
+    background-color: #eeee33;
+}

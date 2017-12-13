@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Antras Puslapis - Antra diena</title>
+    <link rel="stylesheet" href="../css/stilius.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+
+        }
+        #paragrafas {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Antras Puslapis - Antra Diena</h1>
+<a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" title="Anchor Mokymasis">Antra diena</a>
+<!-- komentaras Antra diena -->
+<p id="paragrafas">ABC</p>
+<!-- Linijos uždėjimas-->
+<hr>
+<!-- Nenumeruojamas sąrašas -->
+<div>
+<ul>
+        <li style="color: black">
+            pirmas
+        </li>
+        <li style="color: aqua">
+            antras
+        </li>
+        <li style="color: blue">
+            trečias
+            <ul style="color: black">
+                <li>aaa</li>
+                <li>bbb</li>
+                <li>ccc</li>
+            </ul>
+
+<!-- Numeruojamas sąrašas-->
+
+<ol style="color: red">
+    <li>pirmas</li>
+    <li>antras</li>
+    <li>trecias</li>
+</ol>
+</div>
+<!-- Blokai - DIV angliskai -->
+
+<div style="border: 2px black solid; background-color: yellow; position: relative;">
+    <p>Paragrafas 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut cumque doloremque earum harum illo non omnis quaerat quas voluptatem! Ab doloremque maiores quasi vel velit veritatis voluptas? Earum, nisi.</p>
+    <p>Paragrafas 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut cumque doloremque earum harum illo non omnis quaerat quas voluptatem! Ab doloremque maiores quasi vel velit veritatis voluptas? Earum, nisi.</p>
+    <p>Paragrafas 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, aut cumque doloremque earum harum illo non omnis quaerat quas voluptatem! Ab doloremque maiores quasi vel velit veritatis voluptas? Earum, nisi.</p>
+    <div style="border: 1px green solid; background-color: silver">
+        <span style="color: green">Tekstas</span>
+
+    </div>
+
+    <!-- position absolute-->
+    <div style="position: absolute; top: 2px; right: 2px; background-color: white; border: 1px black solid">
+        Always be closing, <span style="color: blue">ATKAKLUMAS</span>
+    </div>
+    <!--blokas su Z indeksu-->
+    <div style="position: absolute; height: 150px; width: 150px; top:50px; left: 20px; background-color: rosybrown; z-index: 1; border-radius: 50%">
+
+    </div>
+    <div style="position: relative; margin: 5px auto; width: 200px; height: 100px; border: 1px blue solid; background-color: white; text-align: center; line-height: 100px;">
+        Hello World!
+    </div>
+    <div style="position: relative; margin: 5px auto; width: 200px; height: 100px; border: 1px blue solid; background-color: white; text-align: center; line-height: 100px; vertical-align: middle; display: table-cell;">
+        <span class="teksto-paryskinimas">  Hello World!</span>
+    </div>
+</div>
+<i class="fa fa-car"></i>
+<i class="fa fa-car" style="font-size:48px; color: blue"></i>
+<i class="fa fa-car" style="font-size:60px;color:yellow;"></i>
+
+<!--hyperlinko uzdejimas ant fonto iconos, fontu atsisiuntimas-->
+<ul>
+    <li><a href="http://google.lt" target="_blank" <i class="fa fa-address-book" aria-hidden="true"></i></a>pirmas</li>
+    <li><i class="fa fa-handshake-o" aria-hidden="true"></i>antras</li>
+    <li><i class="fa fa-arrows" aria-hidden="true"></i>trecias</li>
+</ul>
+<!--Paveiksliuko iterpimas is savo source-->
+<div style="width: 300px; height: 200px; border: 1px red solid; background-image: url('https://image.freepik.com/free-icon/facebok-circular-logo_318-40188.jpg'); background-repeat: no-repeat; background-position: center center; background-size: contain">
+</div>
+<br>
+<div align="center">
+<iframe width="640" height="320" src="https://www.youtube.com/embed/Dxcc6ycZ73M?rel=0" frameborder="0" gesture="media" allow="encrypted-media"; allowfullscreen; style="display: block"></iframe>
+</div>
+
+<br>
+<!--Pirma forma-->
+<!--Lentele yra tam kad galima isligiuoti-->
+<form action="lenteles.html" ac>
+<table>
+    <tr>
+        <td><label>Vardas</label></td>
+        <td>
+            <table>
+                <tr>
+
+
+                </tr>
+            </table>
+            <input type="text" name="vardas">
+        </td>
+    </tr>
+    <tr>
+        <td><label>Pavardė</label></td>
+        <td><input type="text" name="pavardė"></td>
+    </tr>
+    <!--type="password" iskarto pasidaro zvaigzdutes-->
+    <tr>
+        <td><label>Slaptažodis</label></td>
+        <td><input type="password" name="slaptazodis"></td>
+    </tr>
+    <tr>
+        <td><label>Pozicija</label></td>
+        <td>
+            <select name="Pozicija">
+                <option value="0">Darbininkas</option>
+                <option value="1">Vadybininkas</option>
+                <option value="2">Direktorius</option>
+            </select>
+        </td>
+    </tr>
+
+    <br>
+
+    <td>
+        <label>Atostogose</label>
+    </td>
+    <tr>
+        <td>
+            <input type="checkbox" name="Atostogos">
+        </td>
+    </tr>
+    <tr>
+        <td><label>Pastaba</label></td>
+        <td><textarea name="pastaba" rows="5"></textarea></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><input type="submit" value="Ivykdyti"></td>
+    </tr>
+
+</table>
+</form>
+
+
+</body>
+</html>
