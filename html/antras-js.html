@@ -2,23 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
     <script>
+
+        <!--pirmas variantas kuri reikia visada naudoti-->
         function daubyba(a, b, kv) {
             var result = a * b;
             if (typeof(kv) != 'undefined') result = result*2;
             return result;
         }
+        //----------------------------------------
         function skaiciuoti() {
             var a = parseInt(document.getElementById('a').value);
             var b = parseInt(document.getElementById('b').value);
             alert(daubyba(a,b, true));
         }
+        //kai funkcija priskiriame kintamajam
+        //bet kokia funkcija galima priskirti
+
+        var fnc = function(a, b){
+            return a + b;
+        }
+        var daug = daubyba;
+
     </script>
+    <title>Title</title>
 </head>
 <body>
 <script>
     console.log(daubyba(2, 3));
+    console.log('suma: ' + fnc(2,3));
+    console.log(daug(2,4));
+    var sarasas = ['bmw', 'audi', 'celica'];
+    sarasas.sort ();
+    console.log(JSON.stringify(sarasas));
+    console.log(JSON.stringify(sarasas));
+    sarasas.sort(function (a,b) {
+        if (a.length > b.length) return 1;
+        else {
+            if (a.length == b.length) return 0;
+            else return -1;
+        }
+
+    })
+    console.log(JSON.stringify(sarasas));
+
+//    call back - su jo pagalba mes galime ideti pagal numatyta scenraiju tam tikra funkcioluma, kuris programos kurejas negali visko is anksto numatyti, kad tu galetum pats isideti savo funkcionaluma
 </script>
 <form>
     <label>a</label><input type="text" id="a"><br>

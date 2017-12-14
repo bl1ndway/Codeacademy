@@ -1,0 +1,13 @@
+.spalva {
+    color: #5938ff;
+    background-color: black;
+}
+
+.remelis th, td {
+    border: #dddddd double 1px;
+    padding: 15px 20px;
+}
+
+.remelis {
+    border-collapse: collapse;
+}
