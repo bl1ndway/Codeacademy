@@ -34,3 +34,8 @@ p {
 .teksto-paryskinimas {
     background-color: #eeee33;
 }
+/*
+
+php yra interpretatorius , php turi padaryti pakeitimus hmtl, o tada hmtl siunciamas i browseri
+php nera susijes su html, kai jis gali grazinti duomenis
+*/
