@@ -1,6 +1,7 @@
 <?php
 $m = ['bmw', 'honda','audi'];
 $i = 1;
+
 while ($i<=count($m)){
     echo $i . '. ' .$m[$i-1] . '<br>';
     $i++;
