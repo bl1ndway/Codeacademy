@@ -33,7 +33,6 @@ echo json_encode($nmd). '<br>';
 echo json_encode($nmp). '<br>';
 echo json_encode($nml).'<br>';
 echo json_encode($nmx).'<br>';
-echo json_encode($nms). "<br>";
 
 //----//
 

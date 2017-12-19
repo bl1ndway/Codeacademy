@@ -32,16 +32,28 @@ echo json_encode (dalinti($a, '2')) . '<br>';
 //parametras - masyvas
 //echo is funkcijos
 
-$z = ['kaunas', 'vilnius', 'marijampole', 'nida'];
+$miestai = ['kaunas', 'vilnius', 'marijampole', 'nida'];
 
-function raide ($ma){
+function raidziu_kiekis ($m){
 
     $suma = 0;
-    for ($i=0; $i<count($ma); $i++){
-        $suma += strlen($ma[$i]);
+    for ($i=0; $i<count($m); $i++){
+        $suma += strlen($m[$i]);
     }
     return $suma;
 
 }
 
-echo raide($z);
+echo raidziu_kiekis($miestai).'<br>';
+
+$praktika = ['praktika-1', 'praktika-2','praktika-3'];
+
+function vienas ($v){
+    $rezultatas =0;
+    for ($i=0; $i<count($v); $i++){
+    $rezultatas += strlen($v[$i]);
+    }
+    return $rezultatas . '<br>';
+}
+
+echo vienas($praktika);
