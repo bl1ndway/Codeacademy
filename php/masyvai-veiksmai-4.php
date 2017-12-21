@@ -15,12 +15,6 @@ $rezultatas = skaiciuoti($m);//vykdo
 
 echo skaiciuoti($m). '<br>';
 
-
-
-
-
-
-
 // yra skaiciu masyvas minimum triju
 //sukurti funkcija
 //a) perduodamas parametras masyvas
@@ -83,4 +77,45 @@ function saldu ($mas){
     return implode(' ',$op);
 }
 
-echo json_encode(saldu($saldainiai));
+echo saldu($saldainiai).'<br>';
+
+$auto = ['audi', 'bmw', 'jaguar'];
+
+function automobiliai ($a) {
+    $car = [];
+    for ($i = 0; $i<count($a); $i++){
+        $car[] = str_shuffle($a[$i]);
+    }
+
+    return implode(' . . .',$car);
+
+}
+
+echo automobiliai(['labas','vakaras']).'<br>';
+
+
+
+
+
+
+
+
+$begikai = ['rokas', 'antanas', 'evaldas'];
+
+function draugai ($mas) {
+    $rez = [];
+    for ($i=0; $i <count($mas); $i++) {
+        $rez [] = ucwords($mas[$i]);
+    }
+    return implode(' ',$rez);
+}
+
+echo draugai($begikai).'<br>';
+
+
+
+
+// kas yra masyvas - array (sarasas) jie dvieju tipu
+
+
+
